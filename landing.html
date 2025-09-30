@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="meta-title">Legal Landing</title>
+  <meta id="meta-desc" name="description" content="Free consultation. No fees unless we win." />
+  <link id="canonical" rel="canonical" href="#" />
+
+  <style>
+    :root { --ink:#0f172a; --muted:#475569; --brand:#0284c7; --brand2:#0369a1; --bg:#f8fafc; --panel:#fff; --max:1100px; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    header{background:#0b1220;color:#fff;text-align:center;padding:14px 16px}
+    header h1{margin:0;font-size:1.15rem}
+    nav a{color:#fff;margin:0 8px;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:clamp(16px,3vw,24px)}
+    .hero{background:#e0f2fe;text-align:center;padding:40px 0}
+    .hero h2{margin:0 0 8px;font-size:clamp(24px,4vw,36px)}
+    .hero p{color:var(--muted);max-width:800px;margin:0 auto 14px}
+    .btn{display:inline-block;background:var(--brand);color:#fff;padding:12px 18px;border-radius:8px;font-weight:700;text-decoration:none;margin:6px}
+    .btn:hover{background:var(--brand2)}
+    .grid{display:grid;gap:18px}
+    @media(min-width:860px){.grid-2{grid-template-columns:1fr 1fr}}
+    .card{background:var(--panel);border:1px solid #e2e8f0;border-radius:12px;padding:16px;box-shadow:0 2px 6px #0001}
+    h3{margin-top:0}
+    form{display:grid;gap:12px}
+    input,select,textarea{padding:12px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}
+    button{cursor:pointer;border:none;border-radius:8px;background:var(--brand);color:#fff;padding:12px 16px;font-weight:700}
+    button:hover{background:var(--brand2)}
+    .trust{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:10px 0}
+    .pill{border:1px solid #cbd5e1;border-radius:999px;padding:6px 10px;background:#fff;font-size:.9rem}
+    footer{background:#0b1220;color:#cbd5e1;text-align:center;padding:20px}
+    .small{font-size:.9rem;color:var(--muted)}
+    .hidden{display:none}
+  </style>
+
+  <!-- JSON-LD placeholders will be injected by JS -->
+  <script id="schema-slot" type="application/ld+json">{}</script>
+</head>
+<body>
+  <header>
+    <h1 id="firm-name">Altman & Altman, LLP</h1>
+    <nav aria-label="Top links">
+      <a href="#contact">Free Consultation</a> |
+      <a id="tel-top" href="tel:+16178334483">📞 (617) 833-4483</a> |
+      <a href="#faq">FAQs</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h2 id="hero-title">Need a Lawyer?</h2>
+      <p id="hero-sub">Free consultation. No fees unless we win.</p>
+      <p class="trust">
+        <span class="pill">★★★★★ Reviews</span>
+        <span class="pill">Bar-Certified</span>
+        <span class="pill">Millions Recovered</span>
+      </p>
+      <p>
+        <a class="btn" href="#contact">Get Free Case Review</a>
+        <a id="tel-hero" class="btn" href="tel:+16178334483">📞 (617) 833-4483</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="wrap grid grid-2" aria-label="Benefits and form">
+    <div class="card">
+      <h3 id="why-title">Why Choose Our Attorneys</h3>
+      <ul id="why-list">
+        <!-- filled by JS -->
+      </ul>
+
+      <h3 id="issues-title">Common Issues We Handle</h3>
+      <ul id="issues-list">
+        <!-- filled by JS -->
+      </ul>
+    </div>
+
+    <aside class="card" id="contact" aria-labelledby="form-title">
+      <h3 id="form-title">Free Case Review (Takes 60 seconds)</h3>
+      <form id="lead-form" novalidate>
+        <label for="name">Full Name*</label>
+        <input id="name" name="name" autocomplete="name" required />
+
+        <label for="phone">Phone*</label>
+        <input id="phone" name="phone" inputmode="tel" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" />
+
+        <label for="details">Case Details</label>
+        <textarea id="details" name="details" rows="3"></textarea>
+
+        <label><input type="checkbox" id="consent" required /> I agree to be contacted. I understand this does not create an attorney-client relationship.</label>
+
+        <button type="submit">Request Free Consultation</button>
+        <div id="status" class="small" aria-live="polite"></div>
+      </form>
+    </aside>
+  </section>
+
+  <section class="wrap" aria-labelledby="cal-title">
+    <h3 id="cal-title">Book a Consultation</h3>
+    <iframe id="cal-embed" src="about:blank" width="100%" height="600" frameborder="0" title="Scheduling Widget"></iframe>
+  </section>
+
+  <section class="wrap" id="faq" aria-labelledby="faq-title">
+    <h3 id="faq-title">Frequently Asked Questions</h3>
+    <details><summary id="faq1-q">How much does a lawyer cost?</summary><p id="faq1-a">We work on a contingency fee basis — you pay nothing unless we win.</p></details>
+    <details><summary id="faq2-q">How long do I have to file?</summary><p id="faq2-a">Deadlines vary by case type. Contact us for a free case review.</p></details>
+    <details><summary id="faq3-q">Do you serve outside the city?</summary><p id="faq3-a">Yes, we serve clients across Massachusetts and nearby communities.</p></details>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p><strong id="firm-name-footer">Altman & Altman, LLP</strong></p>
+      <p id="firm-address">675 Massachusetts Ave, Cambridge, MA 02139</p>
+      <p><a id="tel-footer" href="tel:+16178334483" style="color:#38bdf8;">Call (617) 833-4483</a> · <a id="email-footer" href="mailto:massinjuryleads@gmail.com" style="color:#38bdf8;">Email Us</a></p>
+      <p class="small">© <span id="year"></span> Altman & Altman, LLP. Info only; submitting a form does not create an attorney-client relationship.</p>
+    </div>
+  </footer>
+
+  <!-- Live chat (optional) – replace PROPERTY_ID when you have it -->
+  <script>
+    // Uncomment and set your property to enable Tawk.to chat
+    // (function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    // s1.async=true;s1.src='https://embed.tawk.to/PROPERTY_ID/default';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();
+  </script>
+
+  <script>
+    // ====== 1) MASTER SETTINGS (your constants) ======
+    const FIRM = {
+      name: "Altman & Altman, LLP",
+      phoneDisplay: "(617) 833-4483",
+      phoneDial: "+16178334483",
+      email: "massinjuryleads@gmail.com",
+      street: "675 Massachusetts Ave",
+      city: "Cambridge",
+      state: "MA",
+      zip: "02139",
+      logo: "",      // optional
+      image: ""      // optional
+    };
+
+    // ====== 2) PAGE LIBRARY (add new “pages” here only) ======
+    // key = the value you put after ?p= in the URL
+    const PAGES = {
+      "car-accident-boston": {
+        practice: "Car Accident",
+        city: "Boston",
+        state: "MA",
+        years: 50,
+        calendly: "about:blank", // put your Calendly link when you have it
+        why: [
+          "Over 50 years winning car accident cases",
+          "No upfront costs — pay only if we win",
+          "Fast help with insurance & medical bills",
+          "Local team serving Greater Boston"
+        ],
+        issues: [
+          "Insurance low offers & denials",
+          "Wage loss and medical documentation",
+          "Police reports, witnesses, dashcam evidence",
+          "Negotiation and trial when needed"
+        ]
+      },
+      "slip-and-fall-cambridge": {
+        practice: "Slip & Fall",
+        city: "Cambridge",
+        state: "MA",
+        years: 50,
+        calendly: "about:blank",
+        why: [
+          "Experienced premises liability attorneys",
+          "We preserve store/video evidence quickly",
+          "No fees unless we win",
+          "Local Cambridge representation"
+        ],
+        issues: [
+          "Wet floors, ice, poor lighting",
+          "Injuries in stores, apartments, public spaces",
+          "Liability disputes with property owners",
+          "Medical bills and lost wages"
+        ]
+      }
+      // 👉 Add more entries here (copy one, change practice/city/etc.)
+    };
+
+    // ====== 3) UTILITIES ======
+    const $ = (id)=>document.getElementById(id);
+    const q = (sel)=>document.querySelector(sel);
+    const params = new URLSearchParams(location.search);
+    const key = params.get("p");
+
+    // ====== 4) RENDER PAGE OR SHOW ERROR ======
+    function renderPage(conf){
+      const title = `${conf.practice} Lawyers in ${conf.city} | ${FIRM.name}`;
+      $("meta-title").textContent = title;
+      $("meta-desc").setAttribute("content", `Need a ${conf.practice} lawyer in ${conf.city}? ${FIRM.name} offers free consultations. No fees unless we win. Call ${FIRM.phoneDisplay}.`);
+      const canonicalUrl = `${location.origin}${location.pathname}?p=${key}`;
+      $("canonical").setAttribute("href", canonicalUrl);
+
+      // Header/footer firm & contact
+      $("firm-name").textContent = FIRM.name;
+      $("firm-name-footer").textContent = FIRM.name;
+      $("firm-address").textContent = `${FIRM.street}, ${FIRM.city}, ${FIRM.state} ${FIRM.zip}`;
+      $("tel-top").href = `tel:${FIRM.phoneDial}`;
+      $("tel-top").textContent = `📞 ${FIRM.phoneDisplay}`;
+      $("tel-hero").href = `tel:${FIRM.phoneDial}`;
+      $("tel-hero").textContent = `📞 ${FIRM.phoneDisplay}`;
+      $("tel-footer").href = `tel:${FIRM.phoneDial}`;
+      $("tel-footer").textContent = `Call ${FIRM.phoneDisplay}`;
+      $("email-footer").href = `mailto:${FIRM.email}`;
+      $("year").textContent = new Date().getFullYear();
+
+      // Hero + content
+      $("hero-title").textContent = `Need a ${conf.practice} Lawyer in ${conf.city}?`;
+      $("hero-sub").innerHTML = `${FIRM.name} helps clients across ${conf.city}, ${conf.state} get the justice they deserve. Free consultation. <strong>No fees unless we win.</strong>`;
+      $("why-title").textContent = `Why Choose Our ${conf.practice} Attorneys`;
+      $("issues-title").textContent = `Common ${conf.practice} Issues We Handle`;
+      $("why-list").innerHTML = conf.why.map(li=>`<li>${li}</li>`).join("");
+      $("issues-list").innerHTML = conf.issues.map(li=>`<li>${li}</li>`).join("");
+      $("cal-embed").src = conf.calendly;
+
+      // FAQ tweaks
+      $("faq1-q").textContent = `How much does a ${conf.practice} lawyer cost?`;
+
+      // Schema.org JSON-LD
+      const schema = {
+        "@context":"https://schema.org",
+        "@type":"LegalService",
+        "name": FIRM.name,
+        "url": canonicalUrl,
+        "logo": FIRM.logo || undefined,
+        "image": FIRM.image || undefined,
+        "description": `${conf.practice} lawyers serving ${conf.city} and surrounding areas.`,
+        "telephone": FIRM.phoneDial,
+        "priceRange": "$$$",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress": FIRM.street,
+          "addressLocality": FIRM.city,
+          "addressRegion": FIRM.state,
+          "postalCode": FIRM.zip,
+          "addressCountry":"US"
+        },
+        "areaServed":[`${conf.city} ${conf.state}`]
+      };
+      $("schema-slot").textContent = JSON.stringify(schema, null, 2);
+    }
+
+    function renderNotFound(){
+      document.body.innerHTML = `
+        <div class="wrap" style="padding-top:40px">
+          <h2>Page Not Found</h2>
+          <p>This landing page key is missing. Use one of these links:</p>
+          <ul>
+            ${Object.keys(PAGES).map(k=>`<li><a href="?p=${k}">${k}</a></li>`).join("")}
+          </ul>
+        </div>`;
+    }
+
+    const conf = PAGES[key];
+    if(conf){ renderPage(conf); } else { renderNotFound(); }
+
+    // ====== 5) SIMPLE FORM (mailto fallback) ======
+    const form = $("lead-form");
+    const status = $("status");
+    if(form){
+      form.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const phone = form.phone.value.trim();
+        const email = form.email.value.trim();
+        const details = form.details.value.trim();
+        const consent = $("consent").checked;
+        if(!name || !phone || !consent){
+          status.textContent = "Please fill name, phone, and check consent.";
+          status.style.color = "#dc2626";
+          return;
+        }
+        const subject = encodeURIComponent(`New Lead: ${conf.practice} in ${conf.city}`);
+        const body = encodeURIComponent(
+          `Name: ${name}\nPhone: ${phone}\nEmail: ${email||"(none)"}\nPractice Area: ${conf.practice}\nCity: ${conf.city}\nDetails: ${details||"(none)"}`
+        );
+        location.href = `mailto:${FIRM.email}?subject=${subject}&body=${body}`;
+        status.textContent = "Thanks! Your email app opened with the message pre-filled. Send it and we’ll respond quickly.";
+        status.style.color = "#16a34a";
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>
