@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Altman & Altman, LLP | Personal Injury Attorneys in Cambridge, MA</title>
+  <meta name="description" content="Injured in Massachusetts? Speak to a personal injury attorney at Altman & Altman, LLP. Serving Cambridge, Boston, Newton, Needham & Attleboro. Free consultations. No fees unless we win.">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/altman-personal-injury-attorneys/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Altman & Altman, LLP | Personal Injury Attorneys in Cambridge, MA">
+  <meta property="og:description" content="Massachusetts personal injury lawyers helping victims recover what they deserve. No fees unless we win.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/altman-personal-injury-attorneys/">
+
+  <!-- Styling -->
+  <style>
+    :root{
+      --bg:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0ea5e9;
+      --brand-dark:#0284c7; --ok:#16a34a; --warn:#dc2626; --panel:#f8fafc;
+      --ring: 3px solid #0284c7; --max: 1200px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.6;}
+    a{color:var(--brand)}
+    a:focus, button:focus, input:focus, select:focus, textarea:focus{outline:var(--ring); outline-offset:2px}
+    img{max-width:100%; height:auto}
+    .container{max-width:var(--max); margin-inline:auto; padding: clamp(16px, 3vw, 24px);}
+    header{background:#0b1220; color:#fff}
+    .topbar{display:flex; gap:16px; align-items:center; justify-content:space-between}
+    .brand{display:flex; gap:10px; align-items:center; font-weight:700}
+    .brand .logo{width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,#22d3ee,#0284c7); border:2px solid #fff}
+    .btn{appearance:none; border:none; cursor:pointer; text-decoration:none; padding:12px 16px; border-radius:8px; font-weight:600;}
+    .btn-primary{background:var(--brand); color:#fff}
+    .btn-primary:hover{background:var(--brand-dark)}
+    .btn-outline{background:transparent; color:#fff; border:2px solid #fff}
+    .btn-outline:hover{background:#ffffff22}
+    .hero{background: radial-gradient(1000px 500px at 20% 0%, #e0f2fe 0, transparent 60%)}
+    .hero-grid{display:grid; gap:24px}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.2fr 1fr; align-items:center}}
+    h1{font-size:clamp(28px, 4vw, 44px); line-height:1.15; margin:0 0 12px}
+    h2{font-size:clamp(22px, 3vw, 32px); margin:0 0 10px}
+    p.sub{color:var(--muted); margin:0 0 20px}
+    .grid{display:grid; gap:16px}
+    @media(min-width:720px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--panel); border:1px solid #e2e8f0; border-radius:12px; padding:16px}
+    .card h3{margin:0 0 6px; font-size:20px}
+    footer{background:#0b1220; color:#cbd5e1; padding:20px}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <span class="logo"></span>
+        <span>Altman & Altman, LLP</span>
+      </div>
+      <nav>
+        <a class="btn btn-outline" href="tel:+16178334483">📞 Call 24/7: (617) 833-4483</a>
+        <a class="btn btn-primary" href="#contact">Free Case Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Injured? You Focus on Healing — We’ll Handle Everything Else.</h1>
+          <p>Massachusetts personal injury lawyers serving Cambridge, Boston, Newton, Needham & Attleboro. <strong>No fees unless we win.</strong></p>
+        </div>
+
+        <aside class="card" id="contact">
+          <h2>Free Case Review</h2>
+          <p class="sub">Takes 60 seconds. 100% confidential.</p>
+
+          <form id="contact-form" novalidate>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" required>
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+
+            <label for="city">City</label>
+            <input id="city" name="city">
+
+            <label for="type">Type of Accident</label>
+            <select id="type" name="type" required>
+              <option value="">Select one...</option>
+              <option>Car Accident</option>
+              <option>Motorcycle Accident</option>
+              <option>Slip & Fall</option>
+              <option>Workplace Injury</option>
+              <option>Medical Malpractice</option>
+              <option>Other</option>
+            </select>
+
+            <label for="message">What happened?</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+
+            <label><input type="checkbox" id="consent" required> I agree to be contacted. I understand this does not create an attorney-client relationship.</label>
+
+            <button type="submit" class="btn btn-primary">Get My Free Case Review</button>
+            <div id="form-status"></div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Areas of Practice</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Car Accidents</h3><p>We handle insurance and medical claims so you can focus on recovery.</p></div>
+        <div class="card"><h3>Slip & Fall</h3><p>Helping victims injured on unsafe property get the compensation they deserve.</p></div>
+        <div class="card"><h3>Workplace Injuries</h3><p>Workers’ comp and third-party claims managed by experienced trial attorneys.</p></div>
+        <div class="card"><h3>Truck & Motorcycle</h3><p>Fast, decisive representation for severe and complex injuries.</p></div>
+        <div class="card"><h3>Medical Malpractice</h3><p>We work with medical experts to pursue justice for negligence.</p></div>
+        <div class="card"><h3>Wrongful Death</h3><p>Compassionate legal guidance for families during difficult times.</p></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Why Clients Trust Altman & Altman, LLP</h2>
+      <ul>
+        <li>Over 50 years of trusted legal experience in Massachusetts.</li>
+        <li>No fees unless we win your case.</li>
+        <li>Recognized by Massachusetts Bar Association & Super Lawyers.</li>
+        <li>Thousands of satisfied clients and millions recovered.</li>
+      </ul>
+    </section>
+
+    <section class="container">
+      <h2>Frequently Asked Questions</h2>
+      <details><summary>How much does it cost to hire a personal injury lawyer?</summary><p>You pay nothing unless we win your case. Consultations are always free.</p></details>
+      <details><summary>How long do I have to file a claim?</summary><p>In Massachusetts, you typically have up to three years from the date of the injury.</p></details>
+      <details><summary>Do I have to come into your office?</summary><p>No — we offer phone and video consultations for your convenience.</p></details>
+      <details><summary>What areas do you serve?</summary><p>We serve clients throughout Cambridge, Boston, Newton, Needham, and Attleboro, MA.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Altman & Altman, LLP</strong></p>
+      <p>675 Massachusetts Ave, Cambridge, MA 02139</p>
+      <p><a href="tel:+16174923000">(617) 492-3000</a> | <a href="mailto:massinjuryleads@gmail.com">massinjuryleads@gmail.com</a></p>
+      <p>Disclaimer: This website is for informational purposes only. Submitting a form does not create an attorney-client relationship.</p>
+      <p>© <span id="year"></span> Altman & Altman, LLP. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const phone = form.phone.value.trim();
+      const email = form.email.value.trim();
+      const city = form.city.value.trim();
+      const type = form.type.value.trim();
+      const message = form.message.value.trim();
+
+      if(!name || !phone || !type || !form.consent.checked){
+        status.textContent = "Please fill out all required fields.";
+        status.style.color = "red";
+        return;
+      }
+
+      const mailto = `mailto:massinjuryleads@gmail.com?subject=New Lead: ${encodeURIComponent(type)}&body=Name: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0ACity: ${encodeURIComponent(city)}%0AType: ${encodeURIComponent(type)}%0AMessage: ${encodeURIComponent(message)}`;
+      window.location.href = mailto;
+
+      status.textContent = "Thank you! Please check your email app — we pre-filled a message to send to us.";
+      status.style.color = "green";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
